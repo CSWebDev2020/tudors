@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+audio,
+canvas,
+iframe,
+video {
+  vertical-align: middle;
+}
+iframe{
+    max-width: 100%;
+    margin: 1rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: white;
+    font-family: "Inter",-apple-system, Roboto,'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+}
+
+li, a, button{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    height: 84px;
+    width: 100%;
+    max-width: 1140px;
+    position: relative;
+    margin: auto;
+    padding: 0 2em 0 2em;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.116);
+}
+
+.logo{
+    cursor:pointer;
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 85px;
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    color: black;
+    padding: 0px 1.2rem;   
+}
+.nav_links li a.nav_link {
+    transition:  all 0.4s ease 0s;
+}
+.nav_links li a.nav_link:hover {
+    color: #6e4d40;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+.grubhub_link{
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    background-color: #005f85;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 5px;
+    text-align:left;
+    font-weight: bolder;
+}
+.grubhub_link img{
+    margin-right: 5px;
+}
+.find_tudors{
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+}
+.find_tudors img{
+    margin-right: 5px;
+}
+
+main{
+    margin: 2.5rem auto 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: 1300px;
+    overflow-x: hidden;
+    padding:2rem;
+}
+
+footer{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #252525;
+    color: white;
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    margin: 0 3.5rem 0 3.5rem;
+}
+
+.footer_wrapper a{
+    color: white;
+}
+.footer_wrapper a:hover{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.footer_right{
+    text-align: right;
+}
+
+@media only screen and (max-width: 755px) {
+    .footer_wrapper{
+        flex-direction: column;
+        align-items: stretch;
+        margin:0;
+    }
+    .footer_right{
+        text-align: left;
+        margin-top: 2rem;
+    }
+    header .logo{
+        margin-left: 0;
+    }
+    nav{
+        display: none;
+    }
+
+    header.mobileMenu{
+        padding-top: 10px;
+        z-index: 3000;  
+        flex-direction: row;
+        align-items: flex-start; 
+        height: 100vh;  
+        position: fixed; 
+        overflow: hidden;
+        background-color: rgb(255, 255, 255); 
+        margin-top: -2.5rem; 
+    }
+    header.mobileMenu nav{
+        height: 100%; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;  
+    }
+    header.mobileMenu nav ul{
+        height: 34%;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around; 
+        justify-self: center;   
+    }
+    header.mobileMenu nav ul li{
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.116);
+        transition:  all .3s ease 0s;
+    }
+    .menuIcon{
+        padding: 0.5rem;
+        border-radius: 10px;
+        transition:  all .3s ease 0s;
+    }
+    .menuIcon:hover, .menuIcon:active{
+        background-color: rgba(128, 128, 128, 0.521);
+    }
+}
+@media only screen and (min-width: 755px) {
+    .menuIcon{
+        display: none;
+    }
+}
+@media only screen and (max-width: 525px) {
+    header.mobileMenu nav{
+        max-width: 160px;
+    }
+    .grubhub_link{
+        font-size: 0.9rem;
+    }
+}
+
+/* Delete later*/
+
+.iframe_holder{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+.responsive_iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
