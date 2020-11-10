@@ -196,7 +196,7 @@ footer{
         border-radius: 10px;
         transition:  all .3s ease 0s;
     }
-    .menuIcon:hover, .menuIcon:active{
+    .menuIcon:hover{
         background-color: rgba(128, 128, 128, 0.521);
     }
 }
