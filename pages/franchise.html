@@ -10,59 +10,228 @@
         <meta name="keywords" content="Restaurant, Tudor's, Tudor's Biscuit World">
         <title>Tudor's Biscuit World | Franchise</title>
         <link rel="canonical" href="/">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="./styles/custom.css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/custom.css">
     </head>
     <body>
-        <header>
-            <a class="logo" href="./">
-                <img src="./images/tudors-mobile-logo.png" alt="logo" width= "85px"/>
-            </a>
-            <nav>
-                <ul class="nav_links">
-                    <li><a class="nav_link" href="#menu">Menu</a></li>
-                    <li>
-                        <a class="nav_link find_tudors" href="pages/locations.html">
-                            <img src="./Assets/pin.svg" width= "25px"/>
-                            Find a Tudor's
-                        </a>
-                    </li>
-                    <li>
-                        <a class="grubhub_link" href="https://www.grubhub.com/restaurant/tudors-biscuit-world-3071-university-avenue-morgantown/481069" target="_blank">
-                            <img src="./Assets/take-away.svg" width= "35px"/>
-                            ORDER PICKUP / DELIVERY 
-                        </a>
-                    </li>
-                </ul>
+        <header >
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="/">
+                        <img src="../images/tudors-mobile-logo.png" alt="logo" width= "85px"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="../Assets/menu.svg" width="30px">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav_link mr-3" href="../index.html#menu">Menu</a>
+                            <a class="nav_link find_tudors mr-3" href="locations.html">
+                                <img src="../Assets/pin.svg" width= "25px"/>
+                                Find a Tudor's
+                            </a>
+                            <a class="nav_link grubhub_link" href="https://www.grubhub.com/restaurant/tudors-biscuit-world-3071-university-avenue-morgantown/481069" target="_blank">
+                                <img src="../Assets/take-away.svg" width= "35px"/>
+                                ORDER PICKUP / DELIVERY 
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <a class="menuIcon" href="#"><img src="./Assets/menu.svg" width="40px"></a>
         </header>
         <main>
-            <div class="iframe_holder">
-                <iframe class="responsive_iframe" width="1280" height="720"
-                src="https://www.dailymotion.com/embed/video/xcu8ax?autoplay=1" allowFullScreen allow="autoplay">
-                </iframe>
-            </div>
+            <img src="../images/Tudor-Website-Banners-fRANCHISING.jpg" class="img-fluid rounded img-center mb-3" alt="Franchise header image">
+            <br/>
+            <h1 class="max-650">Exciting Franchise Opportunities with Tudor’s Biscuit World</h1>
+            <p class="max-700">We really mean it when we say “Start your day the homemade way!” There are literally thousands of people in four states doing just that, and have for over twenty years. These are daily customers that appreciate eating in the only restaurant chain of its size making every single biscuit from scratch.
+                Tudor’s chain of over seventy restaurants have proven time and time again, that if you start with good planning, have a quality and inexpensive product, have a good location and are willing to work at being consistent, then success can be achieved using our concept. We invite you to look at our web site and be part of our corporate family.   
+            </p>
+            <br/>
+            <hr/>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Are you a US Citizen?</label>
+                    <br/>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">No</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">First Name</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Business Phone</label>
+                    <input type="tel" class="form-control"  value="0-(000)-000-0000" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Home Phone</label>
+                    <input type="tel" class="form-control"  value="0-(000)-000-0000" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address Line 1</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address Line 2</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">City</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">State</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Zip</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">County</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Educational Level</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">College Attended</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Year Attended</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Major</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Describe any training in sales, management, retailing or post graduate study</label>
+                    <textarea class="form-control" id="exampleTextarea"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Food Industry Standard</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">What percentage of your time will you devote to the operation of your restaurant</label>
+                    <textarea class="form-control" id="exampleTextarea"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Who will be responsible for the daily operation of the restaurant</label>
+                    <textarea class="form-control" id="exampleTextarea"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">City of preference for restaurant</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Do you presently own a site</label>
+                    <br/>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">No</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">If yes, where</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Do you have a site available for your purchase</label>
+                    <br/>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">No</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">If yes, where</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Current Employer</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">City</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">State</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Zip Code</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Phone</label>
+                    <input type="tel" class="form-control"  value="0-(000)-000-0000" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Position</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Supervisor</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Title</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label" for="exampleCheck1">May we contact employer?</label>
+                    <br/>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox1">No</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Other</label>
+                    <textarea class="form-control" id="exampleTextarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </main>
         <footer >
             <div class="footer_wrapper">
                 <div>
-                    <a href="./Assets/TudorsNutritionQuickLoad.pdf" target="_blank">
+                    <a href="../Assets/TudorsNutritionQuickLoad.pdf" target="_blank">
                     Nutrition 
                     </a>
                     <br/>
                     <br/> 
-                    <a href="./pages/franchise.html" target="_blank">
+                    <a href="../pages/franchise.html">
                     Franchise 
                     </a>
                     <br/>
                     <br/>
-                    <a href="./pages/employment.html" target="_blank">
+                    <a href="../pages/employment.html">
                     Employment 
                     </a>
                     <br/>
                     <br/>
-                    <a href="./pages/contact.html" target="_blank">
+                    <a href="../pages/contact.html">
                     Contact
                     </a>
                 </div>
@@ -83,7 +252,8 @@
                 </div> 
             </div>
         </footer>
-        <script src="./javascript/main.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
+        <script src="../javascript/main.js" async></script>
     </body>
 </html>
 
