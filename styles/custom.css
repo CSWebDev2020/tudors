@@ -104,11 +104,18 @@ form{
     margin: 0 auto;
 }
 nav#menu{
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 500px) {
     nav#menu{
         overflow-x: scroll;
+    }
+    .nav.nav-tabs{
+        width: 100%;
+        padding-left: 10rem;
     }
 }
 .nav-tabs .nav-link.active{
