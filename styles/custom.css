@@ -33,7 +33,7 @@ hr{
 
 /*-----*/
 body{
-    background-color: white;
+    background-color: #ffffff;
     font-family: "Inter",-apple-system, Roboto,'Helvetica Neue', sans-serif;
     font-size: 1.05rem;
 }
@@ -41,7 +41,7 @@ body{
 
 header{
     z-index: 50;
-    max-width: 1140px;
+    max-width: 1340px;
     margin: 0 auto;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.288);
 }
@@ -83,15 +83,29 @@ header{
 }
 
 main{
-    margin: 2.5rem auto 1.2rem auto;
+    margin: 1.5rem auto 1.2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1300px;
+    max-width: 1400px;
     overflow-x: hidden;
     padding:2rem;
 }
+.bg-wood{
+    background-image: url(../images/bg.jpg);
+    width: auto;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
 .max-650{
     max-width: 650px;
 }
@@ -136,18 +150,23 @@ nav#menu{
 }
 .tab-pane .foodProduct{
     margin: 0 1rem 1rem 1rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.100);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 228.5px;
+    height: 329px;
     text-align: center;
+    background-color: rgba(199, 199, 199, 0.1);
 }
 .foodProduct img{
     border-radius: 100%;
     padding: 1rem 0.5rem;
-    border: 0.5px solid rgba(128, 128, 128, 0.644);
 }
+
 .foodProduct .title{
     color: #761812;
     font-weight: 600;
@@ -213,5 +232,6 @@ footer{
     }
 }
 
-/* Delete later*/
+
+
 
