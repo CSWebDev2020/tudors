@@ -86,35 +86,115 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Colton,Elsa,Solomon,Victor">
+    <meta name="description" content="Order drive-thru or delivery for food that's served fresh-made. See Tudor's latest deals, featured menu items & more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="keywords" content="Restaurant, Tudor's, Tudor's Biscuit World">
+    <title>Tudor's Biscuit World | Login</title>
+    <link rel="canonical" href="/">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/custom.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="/">
+                    <img src="../images/tudors-mobile-logo.png" alt="logo" width= "85px"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../Assets/menu.svg" width="30px">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav_link mr-3" href="../index.html#menu">Menu</a>
+                        <a class="nav_link find_tudors mr-3" href="locations.html">
+                            <img src="../Assets/pin.svg" width= "25px"/>
+                            Find a Tudor's
+                        </a>
+                        <a class="nav_link grubhub_link" href="https://www.grubhub.com/restaurant/tudors-biscuit-world-3071-university-avenue-morgantown/481069" target="_blank">
+                            <img src="../Assets/take-away.svg" width= "35px"/>
+                            ORDER PICKUP / DELIVERY 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="mb-4" style="font-weight: 800;">SIGN UP</h1>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
+            <div class="mb-3 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label class="form-label">USERNAME</label>
+                <input type="text" 
+                class="form-control"  
+                name="username"
+                placeholder="Username" 
+                value="<?php echo $username; ?>"
+                autocomplete="on"
+                required>
+                <small class="text-danger"><?php echo $username_err; ?></small>
             </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-                <span class="help-block"><?php echo $password_err; ?></span>
+            <div class="mb-3 <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label class="form-label">PASSWORD</label>
+                <input type="password" 
+                name="password" 
+                class="form-control"
+                placeholder="Password..." 
+                value="<?php echo $password; ?>"
+                data-kwimpalastatus="alive"
+                autocomplete="off"
+                required>
+                <small class="text-danger"><?php echo $password_err; ?></small>
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
-            </div>
+            <button type="submit" name="submit" class="btn btn-success" value="Submit">SIGN UP</button>
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
-    </div>
+    </main>
+    <footer >
+        <div class="footer_wrapper">
+            <div>
+                <a href="../Assets/TudorsNutritionQuickLoad.pdf" target="_blank">
+                Nutrition 
+                </a>
+                <br/>
+                <br/> 
+                <a href="../pages/franchise.html">
+                Franchise 
+                </a>
+                <br/>
+                <br/>
+                <a href="../pages/employment.html">
+                Employment 
+                </a>
+                <br/>
+                <br/>
+                <a href="../pages/contact.html">
+                Contact
+                </a>
+            </div>
+            <div class="footer_right">
+                <p>
+                    © 2020 Tudor's Biscuit World 
+                    <br/>
+                    <br/>
+                    P.O. Box 3603
+                    <br/>
+                    Charleston, WV 25336
+                    <br/>
+                    (304) 343-4026
+                    <br/>
+                    <br/>
+                    *Not all items available at all locations.
+                </p>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
+    <script src="../javascript/main.js" async></script>
 </body>
 </html>

@@ -150,7 +150,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     value="<?php echo $username; ?>"
                     autocomplete="on"
                     required>
-                    <span class="help-block"><?php echo $username_err; ?></span>
+                    <small class="text-danger"><?php echo $username_err; ?></small>
                 </div>
                 <div class="mb-3 <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                     <label class="form-label">PASSWORD</label>
@@ -162,7 +162,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     data-kwimpalastatus="alive"
                     autocomplete="off"
                     required>
-                    <span class="help-block"><?php echo $password_err; ?></span>
+                    <small class="text-danger"><?php echo $password_err; ?></small>
                 </div>
                 <button type="submit" name="submit" class="btn btn-success" value="Login">LOGIN</button>
                 <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
