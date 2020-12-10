@@ -106,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </nav>
         </header>
         <main>
-            <h1 class="mb-5" style="font-weight: 800;">COMPANY MEMES</h1>
+            <h1 class="mb-5" style="font-weight: 800;">COMPANY MEME TREASURY</h1>
             <br/>
             <hr/>
             <h2 class="mr-auto">Hi, 
@@ -120,8 +120,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <img src="https://avatars3.githubusercontent.com/u/73842122?s=400&u=e280aa7bcfde62de536011414927f977f51f71f1&v=4" alt="Avatar" 
                 class="rounded-circle img-thumbnail mr-5">
                 <div>
-                    <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-                    <a href="logout.php" class="btn btn-danger">Sign Out</a>
+                    <a href="reset-password.php" class="btn btn-outline-dark">Reset Your Password</a>
+                    <a href="logout.php" class="btn btn-outline-danger">Sign Out</a>
                 </div>
             </div>
             <form 
